@@ -1,0 +1,215 @@
+/*全体*/
+body{
+  background-image: url(img/city.jpg);
+  background-color: rgba(255,255, 255, 0.2);
+  background-size: cover;
+  background-color: #E9E4D4;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*入力フォーム*/
+.form{
+  width: 600px;
+  margin-right: 0px;
+  margin-bottom: 25px;
+}
+
+/*ヘッダー*/
+.header{
+  width: auto;
+  display: flex;
+}
+
+.header .admin{
+  font-size: 18px;
+  line-height: 90px;
+  margin-left: auto;  
+  font-weight: 600;
+  
+}
+
+/*テキストエリア*/
+.name{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.name #post_name{
+  display: block;
+}
+
+#message{
+  resize: both;
+  height: 80px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+.messa #message{
+  display: block;
+
+}
+
+/*サクセスメッセージ*/
+.succes_message{
+  color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  width: 300px;
+}
+/*デリートメッセージ*/
+.delete_message{
+  color: red;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid red;
+  width: 300px;
+}
+/*投稿*/
+.toukou{
+
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px;
+  background-color: white;
+  width: 500px;
+}
+.toukou p{
+  margin-top: 0px;
+}
+.toukou .info{
+  display: flex;
+}
+.info h2{
+margin: 0px;
+}
+.info time{
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+/*エラーメッセージ*/
+.error_message li{
+  color: red;
+}
+
+/*ボタン*/
+.square-btn{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.square-btn:active{
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+li{
+  list-style: none;
+}
+.error_message{
+  display: inline;
+}
+
+/*削除ボタン*/
+.square-btn_delete{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #af3737;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+.square-btn_delete:active{
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+/*ログインボタン*/
+.login{
+  margin-top: 30px;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: blue;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.login:active{
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+/*ログアウトボタン*/
+.btn_logout{
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ff3333;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn_logout:active{
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+/*admin*/
+.admin{
+  text-decoration: none;
+  color: black;
+}
+
+.admin:hover{
+  color: #af3737;
+}
+
+@media screen and (max-width:780px) {  
+  
+  body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-image: none;
+  }
+
+  .form{
+    margin: 0px;
+    width: 300px;
+  }
+  
+  .header #hitokoto{
+    font-size: 26px;
+  }
+
+  .header .admin{
+    float: right;
+    font-size: 14px;
+  }
+
+  .toukou{
+    width: 300px;
+  }
+}
+
